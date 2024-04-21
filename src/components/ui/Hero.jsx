@@ -10,8 +10,11 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import { useMediaQuery } from '@react-hook/media-query';
+import { useEventContext } from '@/context/EventProvider';
 
-export const Hero = ({ products }) => {
+const Hero = ({ products }) => {
+  const { onClickImage } = useEventContext();
+
   const firstRow = products.slice(0, 5);
   const secondRow = products.slice(5, 10);
   const thirdRow = products.slice(10, 15);
@@ -22,7 +25,7 @@ export const Hero = ({ products }) => {
   });
 
   const isSmallDevice = useMediaQuery('(max-width: 767px)');
-  const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
+  const springConfig = { stiffness: 600, damping: 30, bounce: 100 };
 
   const translateX = useSpring(
     useTransform(scrollYProgress, [0, 1], [0, 1000]),
@@ -48,14 +51,14 @@ export const Hero = ({ products }) => {
     useTransform(
       scrollYProgress,
       [0, 0.2],
-      isSmallDevice ? [-600, 100] : [-1000, 200]
+      isSmallDevice ? [-500, 0] : [-1000, 200]
     ),
     springConfig
   );
   return (
     <div
       ref={ref}
-      className="h-[200vh] lg:h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:400px] [transform-style:preserve-3d]"
+      className="h-[200vh] lg:h-[300vh] pt-40 pb-0 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -73,6 +76,7 @@ export const Hero = ({ products }) => {
               product={product}
               translate={translateX}
               key={product.title}
+              onClickImage={onClickImage}
             />
           ))}
         </motion.div>
@@ -82,6 +86,7 @@ export const Hero = ({ products }) => {
               product={product}
               translate={translateXReverse}
               key={product.title}
+              onClickImage={onClickImage}
             />
           ))}
         </motion.div>
@@ -91,6 +96,7 @@ export const Hero = ({ products }) => {
               product={product}
               translate={translateX}
               key={product.title}
+              onClickImage={onClickImage}
             />
           ))}
         </motion.div>
@@ -102,19 +108,20 @@ export const Hero = ({ products }) => {
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-4xl md:text-7xl font-bold dark:text-white">
-        The Ultimate <br /> development studio
-      </h1>
-      <p className="max-w-2xl text-lg md:text-xl mt-8 dark:text-neutral-200">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+      <h1 className="text-4xl md:text-7xl font-bold text-white">Tech Udbhav</h1>
+      <p className="max-w-2xl text-lg md:text-xl mt-8 text-neutral-200">
+        Tech Udbhav 2024, the flagship technical fest presented by the IETE
+        Students Forum, is on the horizon! Get ready to immerse yourself in a
+        world where creativity knows no bounds and innovation takes center
+        stage. Tech Udbhav is more than just a fest; it is an experience that
+        will leave you inspired and awestruck. Stay tuned as we reveal more
+        about our lineup of events, attractions and surprises in store.
       </p>
     </div>
   );
 };
 
-export const ProductCard = ({ product, translate }) => {
+export const ProductCard = ({ product, translate, onClickImage }) => {
   return (
     <motion.div
       style={{
@@ -123,21 +130,19 @@ export const ProductCard = ({ product, translate }) => {
       whileHover={{
         y: -20,
       }}
-      key={product.title}
+      key={product.toShow}
       className="group/product h-40 w-40 lg:h-96 lg:w-96 relative flex-shrink-0"
+      onClick={() => onClickImage(product)}
     >
-      <Link
-        href={product.link}
-        className="block group-hover/product:shadow-2xl "
-      >
+      <a href="#event" className="block group-hover/product:shadow-2xl ">
         <Image
-          src={product.thumbnail}
+          src={product.toShow}
           height="600"
           width="600"
           className="object-cover object-left-top absolute h-40 w-40 lg:h-96 lg:w-96 inset-0"
           alt={product.title}
         />
-      </Link>
+      </a>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
       <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
         {product.title}
@@ -145,3 +150,5 @@ export const ProductCard = ({ product, translate }) => {
     </motion.div>
   );
 };
+
+export default Hero;

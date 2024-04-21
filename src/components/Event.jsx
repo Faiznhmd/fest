@@ -1,24 +1,35 @@
+'use client';
+import { useEventContext } from '@/context/EventProvider';
 import Image from 'next/image';
 import React from 'react';
 
 const Event = () => {
+  const { eventData } = useEventContext();
   return (
-    <section className="overflow-hidden p-6 lg:py-10 lg:px-20 lg:pt-[120px] lg:pb-[90px] ">
+    <section
+      className="overflow-hidden p-6 lg:px-20 lg:pt-[80px] lg:pb-[90px]"
+      id="event"
+    >
       <div className="container">
         <div className="flex flex-wrap items-center justify-between -mx-4">
           <div className="w-full px-4 lg:w-6/12">
+            <h1 className="font-bold text-2xl my-4">Event Overview</h1>
             <div className="flex items-center -mx-3 sm:-mx-4">
               <div className="w-full px-3 sm:px-4 xl:w-1/2">
                 <div className="py-3 sm:py-4">
-                  <img
-                    src="/assets/Poster5.jpg"
+                  <Image
+                    height={200}
+                    width={200}
+                    src={eventData?.topPoster}
                     alt=""
                     className="rounded-2xl w-80"
                   />
                 </div>
                 <div className="py-3 sm:py-4">
-                  <img
-                    src="/assets/Poster5.jpg"
+                  <Image
+                    height={200}
+                    width={200}
+                    src={eventData?.bottomPoster}
                     alt=""
                     className="rounded-2xl w-80"
                   />
@@ -26,8 +37,10 @@ const Event = () => {
               </div>
               <div className="w-full px-3 sm:px-4 xl:w-1/2">
                 <div className="relative z-10 my-4">
-                  <img
-                    src="/assets/Poster5.jpg"
+                  <Image
+                    height={200}
+                    width={200}
+                    src={eventData?.mainPoster}
                     alt=""
                     className="rounded-2xl w-80"
                   />
@@ -609,20 +622,13 @@ const Event = () => {
           <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
             <div className="mt-10 lg:mt-0">
               <span className="block mb-4 text-lg font-semibold text-primary">
-                Why Choose Us
+                {eventData?.venue}
               </span>
               <h2 className="mb-5 text-3xl font-bold text-white sm:text-[40px]/[48px]">
-                Make your customers happy by giving services.
+                {eventData?.title}
               </h2>
               <p className="mb-5 text-base text-slate-300">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less.
-              </p>
-              <p className="mb-8 text-base text-slate-300">
-                A domain name is one of the first steps to establishing your
-                brand. Secure a consistent brand image with a domain name that
-                matches your business.
+                {eventData?.about}
               </p>
               <a
                 href="javascript:void(0)"
