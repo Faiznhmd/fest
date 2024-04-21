@@ -16,12 +16,19 @@ module.exports = {
       },
     },
     animation: {
+      'infinite-scroll': 'infinite-scroll 25s linear infinite',
       scroll:
-        'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
+        'scroll var(--animation-duration, 30s) var(--animation-direction, forwards) linear infinite',
     },
     scroll: {
       to: {
         transform: 'translate(calc(-50% - 0.5rem))',
+      },
+    },
+    keyframes: {
+      'infinite-scroll': {
+        from: { transform: 'translateX(0)' },
+        to: { transform: 'translateX(-100%)' },
       },
     },
   },

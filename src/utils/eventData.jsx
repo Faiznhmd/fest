@@ -138,7 +138,7 @@ export const events = [
     toShow: '/assets/Poster4.png',
     mainPoster: '/assets/Poster4.png',
     topPoster: '/assets/minefield1.webp',
-    bottomPoster: '/assets/minefield2.webp',
+    bottomPoster: '/assets/minefiled2.jpeg',
     title: 'Mine Field Rescue',
     about:
       'Are you ready to unleash your robotic ingenuity in the face of danger? Join us for the Minefield Rescue Mission, an enthralling robotics competition organized by IETE-SF. This unique event tests the mettle of participants as they design and construct manually controlled bots to navigate through a complex maze, showcasing precision, strategy, and teamwork',
@@ -199,7 +199,7 @@ export const events = [
     toShow: '/assets/Poster6.png',
     mainPoster: '/assets/Poster6.png',
     topPoster: '/assets/tech trivia1.jpg',
-    bottomPoster: '/assets/tech trivia2.jpg',
+    bottomPoster: '/assets/techtrivia2.jpg',
     title: 'Tech Trivia',
     about:
       'Introducing Tech Trivia-where you can test your skills in a high-octane quiz competition that separates tech-savvy from the rest. Only the brightest minds will advance to the next round, where the real adventure begins. There, by forming groups, they would be engaged in debate and have to tackle thought provoking argument',

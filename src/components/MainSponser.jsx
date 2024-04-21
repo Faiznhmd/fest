@@ -1,12 +1,12 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { Sponsers } from './ui/Sponser';
+import { Sponser } from './ui/Sponser';
 
 export function MainSponser() {
   return (
     <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <Sponsers items={testimonials} direction="right" speed="slow" />
+      <Sponser items={testimonials} direction="right" speed="slow" />
     </div>
   );
 }
