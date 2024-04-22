@@ -630,12 +630,20 @@ const Event = () => {
               <p className="mb-5 text-base text-slate-300">
                 {eventData?.about}
               </p>
-              <a
-                href="javascript:void(0)"
-                className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-blue-500 hover:bg-opacity-90"
-              >
-                Get Started
-              </a>
+              <button className="flex gap-1">
+                <a
+                  href={eventData?.formLink}
+                  className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-blue-500 hover:bg-opacity-90"
+                >
+                  Registration
+                </a>
+                <a
+                  href={eventData?.ruleBookLink}
+                  className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-blue-500 hover:bg-opacity-90"
+                >
+                  Rule Book
+                </a>{' '}
+              </button>
             </div>
           </div>
         </div>
