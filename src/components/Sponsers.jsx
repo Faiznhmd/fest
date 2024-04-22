@@ -4,7 +4,7 @@ import React from 'react';
 const Timeline = () => {
   return (
     <main className="relative h-200 flex flex-col justify-center bg-dark-900 overflow-hidden">
-      <h1 className="font-bold text-4xl my-4 justify-center items-center flex">
+      <h1 className="font-bold text-2xl my-4 justify-center items-center flex">
         Our Previous Sponsors
       </h1>
       <div className="w-full max-w-5xl mx-auto px-4 md:px-6 py-10">
