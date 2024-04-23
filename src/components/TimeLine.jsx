@@ -1,7 +1,7 @@
 const TimeLine = () => {
   return (
     <>
-      <h1 className="font-bold text-2xl my-4 justify-center items-center flex">
+      <h1 className="font-bold text-2xl my-4 justify-center items-center flex ">
         Events TimeLine
       </h1>
       <ol class="items-center sm:flex px-4 lg:justify-center pb-5">
