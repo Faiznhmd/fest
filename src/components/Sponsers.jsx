@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Timeline = () => {
+const Sponsers = () => {
   return (
     <main className="relative h-200 flex flex-col justify-center bg-dark-900 overflow-hidden">
       <h1 className="font-bold text-2xl my-4 justify-center items-center flex">
@@ -138,4 +138,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline;
+export default Sponsers;
