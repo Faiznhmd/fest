@@ -1,13 +1,13 @@
 'use client';
+import Carousal from '@/components/Carousal';
 import Event from '@/components/Event';
 import { Footer } from '@/components/Footer';
 import { MainHero } from '@/components/MainHero';
-// import { MainSponser } from '@/components/MainSponser';
 import Navbar from '@/components/Navbar';
 import Sponser from '@/components/Sponsers';
 import TimeLine from '@/components/TimeLine';
+import Hub from '@/components/Hub';
 
-// import { Timeline } from '@/components/ui/Sponser';
 import React from 'react';
 
 const page = () => {
@@ -16,9 +16,13 @@ const page = () => {
       <Navbar />
       <MainHero />
       <Event />
+
+      {/* <Slider /> */}
+      {/* <Carousal /> */}
+      {/* <Parallax /> */}
+      {/* <Slider /> */}
       <TimeLine />
       <Sponser />
-      {/* <MainSponser /> */}
       <Footer />
     </>
   );
