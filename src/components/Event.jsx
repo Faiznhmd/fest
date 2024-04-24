@@ -7,12 +7,12 @@ const Event = () => {
   const { eventData } = useEventContext();
   return (
     <section
-      className="overflow-hidden p-6 lg:px-20 lg:pt-[80px] lg:pb-[90px]"
+      className="overflow-hidden p-2 lg:px-10 lg:pt-[20px] lg:pb-[50px]"
       id="event"
     >
-      <div className="container">
+      <div className="container pt-2">
         <div className="flex flex-wrap items-center justify-between -mx-4">
-          <div className="w-full px-4 lg:w-6/12">
+          <div className="w-full  lg:w-6/12">
             <h1 className="font-bold text-2xl my-4">Event Overview</h1>
             <div className="flex items-center -mx-3 sm:-mx-4">
               <div className="w-full px-3 sm:px-4 xl:w-1/2">

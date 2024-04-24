@@ -6,13 +6,23 @@ const Carousal = () => {
     <>
       <div
         id="default-carousel"
-        class="relative w-1/2 bg-white"
+        class="relative w-1/2 bg-white flex items-center justify-center"
         data-carousel="slide"
       >
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
           <div class=" duration-700 ease-in-out" data-carousel-item>
             <Image
-              src="/assets/Poster1.webp"
+              src="/assets/cyber1.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+              height={200}
+              width={200}
+            />
+          </div>
+
+          <div class=" duration-700 ease-in-out" data-carousel-item>
+            <Image
+              src="/assets/cyber1.jpg"
               class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt="..."
               height={200}
@@ -22,7 +32,7 @@ const Carousal = () => {
 
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <Image
-              src="/docs/images/carousel/carousel-2.svg"
+              src="/assets/cyber1.jpg"
               class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt="..."
               height={200}
@@ -32,7 +42,7 @@ const Carousal = () => {
 
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <Image
-              src="/docs/images/carousel/carousel-3.svg"
+              src="/assets/cyber1.jpg"
               class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt="..."
               height={200}
@@ -42,17 +52,7 @@ const Carousal = () => {
 
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <Image
-              src="/docs/images/carousel/carousel-4.svg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-              height={200}
-              width={200}
-            />
-          </div>
-
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <Image
-              src="/docs/images/carousel/carousel-5.svg"
+              src="/assets/cyber1.jpg"
               class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt="..."
               height={200}

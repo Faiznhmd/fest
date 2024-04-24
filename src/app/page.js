@@ -1,12 +1,16 @@
 'use client';
-import Carousal from '@/components/Carousal';
+// import Carousals from '@/components/Carausal/Carausals.jsx';
+import Card from '@/components/card/Card';
+// import Carousal from '@/components/Carousal';
 import Event from '@/components/Event';
 import { Footer } from '@/components/Footer';
 import { MainHero } from '@/components/MainHero';
 import Navbar from '@/components/Navbar';
 import Sponser from '@/components/Sponsers';
 import TimeLine from '@/components/TimeLine';
-import Hub from '@/components/Hub';
+import { About } from '@/components/ui/About';
+
+// import Hub from '@/components/Hub';
 
 import React from 'react';
 
@@ -15,12 +19,11 @@ const page = () => {
     <>
       <Navbar />
       <MainHero />
+      <About />
       <Event />
-
-      {/* <Slider /> */}
+      <Card />
       {/* <Carousal /> */}
-      {/* <Parallax /> */}
-      {/* <Slider /> */}
+      {/* <Carousals /> */}
       <TimeLine />
       <Sponser />
       <Footer />
