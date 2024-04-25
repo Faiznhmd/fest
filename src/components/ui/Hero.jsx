@@ -109,8 +109,8 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-30 px-4 w-full  left-0 top-0  items-center flex justify-center flex-col">
       <p className="font-bold mb-3 text-2xl uppercase">Echoes of Innovation</p>
-      <h1 className="text-6xl md:text-8xl font-bold text-center bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600 inline-block text-transparent bg-clip-text">
-        Tech Udbhav <span className='font-medium'>By</span> IETE SF
+      <h1 className="relative text-6xl md:text-8xl font-bold text-center bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600 inline-block text-transparent bg-clip-text">
+        Tech Udbhav <span className='font-medium text-5xl'>By</span> IETE SF
       </h1>
       <p className="md:max-w-2xl text-lg md:text-xl md:mt-8  mt-4 text-neutral-200 text-center">
         Tech Udbhav 2024, the flagship technical fest presented by the IETE
@@ -118,9 +118,7 @@ export const Header = () => {
         world where creativity knows no bounds and innovation takes center
         stage.
       </p>
-      <button className="pt-6 mt-3 rounded-3xl bg-zinc-700 px-10 py-5 items-center text-white-950 font-bold cursor-pointer">
-        Explore
-      </button>
+      <button className='bg-zinc-800/60 mt-10 py-3 px-10 rounded-md hover:bg-zinc-800/20'>Explore More</button>
     </div>
   );
 };
