@@ -33,14 +33,14 @@ const page = () => {
       <Navbar />
       <MainHero />
       <About />
-      <div className='grid grid-cols-2 lg:grid-cols-6 gap-6 p-8 items-center'>
+      <a href='#event' className='grid grid-cols-2 lg:grid-cols-6 gap-6 p-8 items-center'>
         {uniqueEvents?.map((product) => (
           <EventCard
             product={product}
             key={product.id}
             onClickImage={onClickImage} />
         ))}
-      </div>
+      </a>
       <Event />
       <TimeLine />
       <Sponser />
