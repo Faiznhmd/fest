@@ -1,15 +1,18 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import './slide.css';
+import { useEventContext } from '@/context/EventProvider';
 
 const Card = () => {
+  const { eventData } = useEventContext();
   return (
     <>
       <div class="containers">
         <div class="card__container">
           <article class="card__article">
             <Image
-              src="/assets/Poster1.webp"
+              src="/assets/poster-22.webp"
               alt="image"
               class="card__img"
               width={100}

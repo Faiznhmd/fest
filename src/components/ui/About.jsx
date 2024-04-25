@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export const About = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-10 px-4 w-full  left-0 top-0 flex flex-row gap-40 ">
+    <div className="max-w-7xl relative mx-auto py-30 md:py-10 px-4 w-full flex flex-row gap-40">
       <div>
         <h1 className="text-4xl md:text-7xl font-bold text-white">About Us</h1>
         <p className="max-w-2xl text-lg md:text-xl mt-8 text-neutral-200">
@@ -16,12 +16,7 @@ export const About = () => {
       </div>
 
       <div>
-        <Image
-          src="/assets/hero-bannerr.jpeg"
-          alt=""
-          width={300}
-          height={700}
-        />
+        <Image src="/assets/about.jpg" alt="" width={300} height={700} />
       </div>
     </div>
   );

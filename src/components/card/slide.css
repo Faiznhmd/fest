@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap'); */
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -33,12 +33,6 @@
   margin: 0;
 }
 
-body {
-  font-family: var(--body-font);
-  /* background-color: var(--body-color); */
-  /* color: var(--text-color); */
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -66,7 +60,7 @@ img {
 
 .card__img {
   width: 150px;
-  border-radius: 1.5rem;
+  /* border-radius: 1.5rem; */
 }
 
 .card__data {
@@ -170,6 +164,8 @@ img {
 @media screen and (max-width: 340px) {
   .container {
     margin-inline: 1rem;
+    display: grid;
+    grid-template-rows: 2fr 80px;
   }
 
   .card__data {

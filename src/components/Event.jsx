@@ -7,12 +7,12 @@ const Event = () => {
   const { eventData } = useEventContext();
   return (
     <section
-      className="overflow-hidden p-2 lg:px-10 lg:pt-[20px] lg:pb-[50px]"
+      className="overflow-hidden p-2 lg:px-10 lg:pt-[20px] lg:pb-[30px]"
       id="event"
     >
       <div className="container pt-2">
         <div className="flex flex-wrap items-center justify-between -mx-4">
-          <div className="w-full  lg:w-6/12">
+          <div className="w-full  p-6 lg:w-6/12">
             <h1 className="font-bold text-2xl my-4">Event Overview</h1>
             <div className="flex items-center -mx-3 sm:-mx-4">
               <div className="w-full px-3 sm:px-4 xl:w-1/2">
@@ -630,19 +630,35 @@ const Event = () => {
               <p className="mb-5 text-base text-slate-300">
                 {eventData?.about}
               </p>
-              <button className="flex gap-1">
-                <a
-                  href={eventData?.formLink}
-                  className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-blue-500 hover:bg-opacity-90"
-                >
-                  Registration
-                </a>
-                <a
-                  href={eventData?.ruleBookLink}
-                  className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-blue-500 hover:bg-opacity-90"
-                >
-                  Rule Book
-                </a>{' '}
+              <button className="flex gap-6">
+                <aside className="flex items-center gap-4">
+                  <div className="relative inline-flex h-10 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                      <a
+                        href={eventData?.formLink}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Registration
+                      </a>
+                    </span>
+                  </div>
+                </aside>
+                <aside className="flex items-center gap-4">
+                  <div className="relative inline-flex h-10 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                    <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                      <a
+                        href={eventData?.ruleBookLink}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Rulebook
+                      </a>
+                    </span>
+                  </div>
+                </aside>
               </button>
             </div>
           </div>
