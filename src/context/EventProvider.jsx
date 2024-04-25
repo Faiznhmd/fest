@@ -6,6 +6,7 @@ export const useEventContext = () => useContext(EventContext);
 
 export const EventProvider = ({ children }) => {
   const [eventData, setEventData] = useState({
+    id: 1,
     toShow: '/assets/Poster1.webp',
     mainPoster: '/assets/Poster1.webp',
     topPoster: '/assets/robo1.avif',

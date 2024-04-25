@@ -75,7 +75,7 @@ const Hero = ({ products }) => {
             <ProductCard
               product={product}
               translate={translateX}
-              key={product.title}
+              key={product.id}
               onClickImage={onClickImage}
             />
           ))}
@@ -85,7 +85,7 @@ const Hero = ({ products }) => {
             <ProductCard
               product={product}
               translate={translateXReverse}
-              key={product.title}
+              key={product.id}
               onClickImage={onClickImage}
             />
           ))}
@@ -95,7 +95,7 @@ const Hero = ({ products }) => {
             <ProductCard
               product={product}
               translate={translateX}
-              key={product.title}
+              key={product.id}
               onClickImage={onClickImage}
             />
           ))}
@@ -132,7 +132,7 @@ export const ProductCard = ({ product, translate, onClickImage }) => {
       whileHover={{
         y: -20,
       }}
-      key={product.toShow}
+      key={product.id}
       className="group/product h-40 w-40 lg:h-96 lg:w-96 relative flex-shrink-0"
       onClick={() => onClickImage(product)}
     >
