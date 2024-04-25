@@ -629,9 +629,7 @@ const Event = () => {
               <h2 className="mb-5 text-3xl font-bold  sm:text-[40px]/[48px]  bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600 inline-block text-transparent bg-clip-text">
                 {eventData?.title}
               </h2>
-              <p className="mb-5  text-slate-300 text-2xl">
-                {eventData?.about}
-              </p>
+              <p className="mb-5  text-slate-300 text-xl">{eventData?.about}</p>
               <button className="flex gap-6">
                 <aside className="flex items-center gap-4">
                   <div className="relative inline-flex h-10 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">

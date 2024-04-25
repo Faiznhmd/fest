@@ -148,7 +148,7 @@ export const events = [
     toShow: '/assets/Poster4.png',
     mainPoster: '/assets/Poster4.png',
     topPoster: '/assets/minefield1.webp',
-    bottomPoster: '/assets/minefield2.webp',
+    bottomPoster: '/assets/minefiled2.jpeg',
     title: 'Mine Field Rescue',
     about:
       'Are you ready to unleash your robotic ingenuity in the face of danger? Join us for the Minefield Rescue Mission, an enthralling robotics competition organized by IETE-SF. This unique event tests the mettle of participants as they design and construct manually controlled bots to navigate through a complex maze, showcasing precision, strategy, and teamwork',

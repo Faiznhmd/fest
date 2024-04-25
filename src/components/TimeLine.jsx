@@ -1,17 +1,13 @@
 const TimeLine = () => {
   return (
     <>
-      <h1 className="font-bold text-2xl my-4 justify-center items-center flex ">
+      <h1 className="font-bold text-6xl my-4 justify-center items-center flex  bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600  text-transparent bg-clip-text pb-5">
         Events TimeLine
       </h1>
       <ol class="items-center sm:flex px-4 lg:justify-center pb-5 gap-6">
         <li class="relative mb-6 sm:mb-0">
           <div class="flex items-center">
-<<<<<<< HEAD
-            <div class="z-10 flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full ring-0 ring-white dark:bg-purple-500 sm:ring-8 dark:ring-gray-900 shrink-0 text-3xl">
-=======
-            <div class="z-10 flex items-center justify-center w-12 h-12 rounded-full ring-0 ring-white bg-purple-500 sm:ring-8 ring-gray-900 shrink-0 text-3xl">
->>>>>>> 119cd6368402307814b04c35ea33966548763d5f
+            <div class="z-10 flex items-center justify-center w-12 h-12 rounded-full ring-0  bg-purple-500 sm:ring-8 ring-gray-900 shrink-0 text-3xl">
               <svg
                 class="w-5 h-5 text-purple-500-800 text-white-300 text-3xl"
                 aria-hidden="true"
@@ -37,9 +33,7 @@ const TimeLine = () => {
             <p class="text-base font-normal text-gray-400">
               Tech Trivia Prelims 10AM-11:30AM
             </p>
-            <h3 class="text-lg font-semibold text-white">
-              Evening
-            </h3>
+            <h3 class="text-lg font-semibold text-white">Evening</h3>
             <time class="btext-base font-normal text-gray-400">
               Cyber Battleground Round 1 3:30PM-5:00PM
             </time>
@@ -50,15 +44,9 @@ const TimeLine = () => {
         </li>
         <li class="relative mb-6 sm:mb-0">
           <div class="flex items-center">
-<<<<<<< HEAD
-            <div class="z-10 flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full ring-0 ring-white dark:bg-purple-500 sm:ring-8 dark:ring-gray-900 shrink-0 text-8xl">
-              <svg
-                class="w-2.5 h-2.5 text-white-800 dark:text-white-300 text-9xl"
-=======
             <div class="z-10 flex items-center justify-center w-12 h-12 rounded-full ring-0 ring-white bg-purple-500 sm:ring-8 ring-gray-900 shrink-0">
               <svg
                 class="w-5 h-5 text-white-800 text-white-300"
->>>>>>> 119cd6368402307814b04c35ea33966548763d5f
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -79,9 +67,7 @@ const TimeLine = () => {
             <p class="text-base font-normal text-gray-400">
               Tech Trivia Round 2 10AM-1PM
             </p>
-            <h3 class="text-lg font-semibold text-white">
-              Evening
-            </h3>
+            <h3 class="text-lg font-semibold text-white">Evening</h3>
             <time class="btext-base font-normal text-gray-400">
               WorkShop 3:30PM-5:30PM
             </time>
@@ -92,11 +78,7 @@ const TimeLine = () => {
         </li>
         <li class="relative mb-6 sm:mb-0">
           <div class="flex items-center">
-<<<<<<< HEAD
-            <div class="z-10 flex items-center justify-center w-12 h-12 bg-blue-100 rounded-full ring-0 ring-white dark:bg-purple-500 sm:ring-8 dark:ring-gray-900 shrink-0">
-=======
             <div class="z-10 flex items-center justify-center w-12 h-12 rounded-full ring-0 ring-white bg-purple-500 sm:ring-8 ring-gray-900 shrink-0">
->>>>>>> 119cd6368402307814b04c35ea33966548763d5f
               <svg
                 class="w-5 h-5 text-white-800 text-white-300"
                 aria-hidden="true"
@@ -119,15 +101,11 @@ const TimeLine = () => {
             <p class="text-base font-normal text-gray-400">
               Innovation Tank 10:00AM-2:00PM
             </p>
-            <h3 class="text-lg font-semibold text-white">
-              Evening
-            </h3>
+            <h3 class="text-lg font-semibold text-white">Evening</h3>
             <time class="btext-base font-normal text-gray-400">
               Robo Scooer 3:30PM-5:30PM
             </time>
-            <p class="text-base font-normal text-gray-400">
-              Robo Scooer
-            </p>
+            <p class="text-base font-normal text-gray-400">Robo Scooer</p>
           </div>
         </li>
       </ol>
