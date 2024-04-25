@@ -11,13 +11,13 @@ import EventCard from '@/components/EventCard';
 import { useEventContext } from '@/context/EventProvider';
 import { events } from '@/utils/eventData';
 
-const page = () => {
+const Page = () => {
   const { onClickImage } = useEventContext();
   const [uniqueEvents, setUniqueEvents] = useState([]);
 
   useEffect(() => {
     const uniqueToShowImages = new Set();
-    const filteredEvents = events.filter(event => {
+    const filteredEvents = events.filter((event) => {
       if (!uniqueToShowImages.has(event.toShow)) {
         uniqueToShowImages.add(event.toShow);
         return true;
@@ -27,18 +27,21 @@ const page = () => {
     setUniqueEvents(filteredEvents);
   }, [events]);
 
-
   return (
     <>
       <Navbar />
       <MainHero />
       <About />
-      <a href='#event' className='grid grid-cols-2 lg:grid-cols-6 gap-6 p-8 items-center'>
+      <a
+        href="#event"
+        className="grid grid-cols-2 lg:grid-cols-6 gap-6 p-8 items-center"
+      >
         {uniqueEvents?.map((product) => (
           <EventCard
             product={product}
             key={product.id}
-            onClickImage={onClickImage} />
+            onClickImage={onClickImage}
+          />
         ))}
       </a>
       <Event />
@@ -49,4 +52,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
