@@ -14,7 +14,7 @@ const Navbar = () => {
             <Link href="#events">Events</Link>
           </li>
           <li className="cursor-pointer">
-            <Link href="#sponsers">Sponsers</Link>
+            <Link href="#sponsors">Sponsors</Link>
           </li>
           <li className="cursor-pointer">
             <Link href="https://ietebits.com/" target="_blank" rel="noreferrer">
