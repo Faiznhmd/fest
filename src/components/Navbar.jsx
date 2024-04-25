@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <header className="fixed right-0 left-0 top-0 py-4 px-4 bg-black/40 backdrop-blur-lg z-[100] flex items-center border-b-[1px] border-neutral-900 justify-between text-white">
+    <header className="fixed right-0 left-0 top-0 px-4 py-4 lg:px-16 py-4 bg-black/40 backdrop-blur-lg z-[100] flex items-center border-b-[1px] border-neutral-900 justify-between text-white">
       <aside className="flex items-center gap-[5px]">
         <Image src="/assets/tu.png" alt="fuzzie logo" width={70} height={70} />{' '}
         Tech Udbhav
       </aside>
       <nav className="absolute left-[50%] top-[50%] trasfrom translate-x-[-50%] translate-y-[-50%] hidden md:block">
-        <ul className="flex items-center gap-4  list-none">
+        <ul className="flex items-center gap-10  list-none">
           <li className="cursor-pointer">
             <Link href="#events">Events</Link>
           </li>
