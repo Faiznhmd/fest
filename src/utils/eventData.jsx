@@ -112,17 +112,17 @@ export const events = [
     date: '',
   },
   {
-    id: 7,
-    toShow: '/assets/poster-33.webp',
-    mainPoster: '/assets/poster-33.webp',
-    topPoster: '/assets/cyber1.jpg',
-    bottomPoster: '/assets/cyber2.jpg',
-    title: 'Cyber Battleground',
+    id: 14,
+    toShow: '/assets/Poster6.png',
+    mainPoster: '/assets/Poster6.png',
+    topPoster: '/assets/tech trivia1.jpg',
+    bottomPoster: '/assets/techtrivia2.jpg',
+    title: 'Tech Trivia',
     about:
-      'Are you ready to be part of something extraordinary? Gather your team and prepare to pitch your game-changing solutions. Whether you are a budding entrepreneur, a seasoned innovator, or simply passionate about driving positive change, Innovation Tank offers an unparalleled opportunity to dive into the depths of innovation But here is the twist: it is not just about presenting a concept on paper. You will need to bring your innovation to life with a physical model',
+      'Introducing Tech Trivia-where you can test your skills in a high-octane quiz competition that separates tech-savvy from the rest. Only the brightest minds will advance to the next round, where the real adventure begins. There, by forming groups, they would be engaged in debate and have to tackle thought provoking argument',
 
-    formLink: 'https://bit.ly/Cyber_Battleground_iete',
-    ruleBookLink: 'https://bit.ly/CyberBattleground_rulebook',
+    formLink: 'https://bit.ly/Tech_Trivia_rulebook',
+    ruleBookLink: 'https://bit.ly/Tech_Trivia_rulebook',
     abstractLink: '',
     venue: '',
     date: '',
@@ -175,6 +175,23 @@ export const events = [
     venue: '',
     date: '',
   },
+
+  {
+    id: 7,
+    toShow: '/assets/poster-33.webp',
+    mainPoster: '/assets/poster-33.webp',
+    topPoster: '/assets/cyber1.jpg',
+    bottomPoster: '/assets/cyber2.jpg',
+    title: 'Cyber Battleground',
+    about:
+      'Are you ready to be part of something extraordinary? Gather your team and prepare to pitch your game-changing solutions. Whether you are a budding entrepreneur, a seasoned innovator, or simply passionate about driving positive change, Innovation Tank offers an unparalleled opportunity to dive into the depths of innovation But here is the twist: it is not just about presenting a concept on paper. You will need to bring your innovation to life with a physical model',
+
+    formLink: 'https://bit.ly/Cyber_Battleground_iete',
+    ruleBookLink: 'https://bit.ly/CyberBattleground_rulebook',
+    abstractLink: '',
+    venue: '',
+    date: '',
+  },
   {
     id: 12,
     toShow: '/assets/Poster5.jpg',
@@ -187,22 +204,6 @@ export const events = [
 
     formLink: 'https://bit.ly/Cloak_Coding_iete',
     ruleBookLink: 'https://bit.ly/Cloakcoding_Rulebook',
-    abstractLink: '',
-    venue: '',
-    date: '',
-  },
-  {
-    id: 14,
-    toShow: '/assets/Poster6.png',
-    mainPoster: '/assets/Poster6.png',
-    topPoster: '/assets/tech trivia1.jpg',
-    bottomPoster: '/assets/techtrivia2.jpg',
-    title: 'Tech Trivia',
-    about:
-      'Introducing Tech Trivia-where you can test your skills in a high-octane quiz competition that separates tech-savvy from the rest. Only the brightest minds will advance to the next round, where the real adventure begins. There, by forming groups, they would be engaged in debate and have to tackle thought provoking argument',
-
-    formLink: 'https://bit.ly/Tech_Trivia_rulebook',
-    ruleBookLink: 'https://bit.ly/Tech_Trivia_rulebook',
     abstractLink: '',
     venue: '',
     date: '',
