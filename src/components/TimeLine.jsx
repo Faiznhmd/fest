@@ -4,7 +4,7 @@ const TimeLine = () => {
       <h1 className="font-bold text-6xl my-4 justify-center items-center flex  bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600  text-transparent bg-clip-text pb-5">
         Events TimeLine
       </h1>
-      <ol class="items-center sm:flex px-4 lg:justify-center pb-5 gap-6">
+      <ol class="items-center sm:flex px-4 lg:justify-center pb-16 gap-6 ">
         <li class="relative mb-6 sm:mb-0">
           <div class="flex items-center">
             <div class="z-10 flex items-center justify-center w-12 h-12 rounded-full ring-0  bg-purple-500 sm:ring-8 ring-gray-900 shrink-0 text-3xl">

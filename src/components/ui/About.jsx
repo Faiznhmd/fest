@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export const About = () => {
   return (
-    <div className="relative mx-auto py-30 md:flex-row md:py-10 px-4 lg:px-16 w-full flex flex-col justify-between gap-10 md:gap-40">
+    <div className="relative mx-auto py-30 md:flex-row md:py-10 px-4 lg:px-16 w-full flex flex-col justify-evenly gap-10 md:gap-40 pb-16">
       <div>
         <h1 className="text-6xl md:text-7xl font-bold  bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600 inline-block text-transparent bg-clip-text">
           About Us
@@ -18,7 +18,12 @@ export const About = () => {
       </div>
 
       <div>
-        <Image src="/assets/about.jpg" alt="" width={300} height={700} />
+        <Image
+          src="/assets/hero-bannerr.jpeg"
+          alt=""
+          width={300}
+          height={700}
+        />
       </div>
     </div>
   );
