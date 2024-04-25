@@ -108,17 +108,10 @@ const Hero = ({ products }) => {
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-1xl md:text-7xl font-bold text-white">
+      <h1 className="text-1xl md:text-7xl font-bold text-white items-center flex justify-center">
         Tech Udbhav
-        {/* <Image
-          src="/assets/techudh.png"
-          alt=""
-          height={200}
-          width={100}
-          className="text-9xl"
-        /> */}
       </h1>
-      <p className="max-w-2xl text-lg md:text-xl mt-8 text-neutral-200">
+      <p className="max-w-2xl text-lg md:text-xl mt-8 text-neutral-200 items-center flex justify-center">
         Tech Udbhav 2024, the flagship technical fest presented by the IETE
         Students Forum, is on the horizon! Get ready to immerse yourself in a
         world where creativity knows no bounds and innovation takes center
