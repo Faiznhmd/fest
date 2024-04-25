@@ -33,7 +33,7 @@ const page = () => {
       <Navbar />
       <MainHero />
       <About />
-      <div className='grid grid-cols-6 gap-6 p-8 items-center'>
+      <div className='grid grid-cols-2 lg:grid-cols-6 gap-6 p-8 items-center'>
         {uniqueEvents?.map((product) => (
           <EventCard
             product={product}

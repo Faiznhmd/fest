@@ -1,8 +1,9 @@
 import { Oxanium } from 'next/font/google';
+import { Rokkitt } from 'next/font/google';
 import './globals.css';
 import { EventProvider } from '@/context/EventProvider';
 
-const oxanium = Oxanium({ subsets: ['latin'] });
+const rokkitt = Rokkitt({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Tech Udbhav',
@@ -12,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={oxanium.className}>
+      <body className={rokkitt.className}>
         <EventProvider>{children}</EventProvider>
       </body>
     </html>
