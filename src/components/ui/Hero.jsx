@@ -118,9 +118,11 @@ export const Header = () => {
         world where creativity knows no bounds and innovation takes center
         stage.
       </p>
-      <button className="font-bold bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600 inline-block text-transparent bg-clip-text mt-10 py-3 px-10 rounded-md text-white">
-        Explore More
-      </button>
+      <a href="#about" className='z-50'>
+        <button className="font-bold bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600 mt-10 py-3 px-10 rounded-md text-slate-800">
+          Explore More
+        </button>
+      </a>
     </div>
   );
 };
