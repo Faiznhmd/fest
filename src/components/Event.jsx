@@ -12,8 +12,8 @@ const Event = () => {
     >
       <div className="container pt-2">
         <div className="flex flex-wrap items-center justify-between -mx-4">
-          <div className="w-full  p-6 lg:w-6/12">
-            <h1 className="font-bold  my-4 text-4xl md:text-7xl  bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600 inline-block text-transparent bg-clip-text">
+          <div className="w-full  p-6 lg:w-6/12 ">
+            <h1 className="font-bold  my-4 text-4xl md:text-7xl  bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600  text-transparent bg-clip-text">
               Event Overview
             </h1>
             <div className="flex items-center -mx-3 sm:-mx-4">

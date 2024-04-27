@@ -69,15 +69,6 @@ const Sponsers = () => {
               </li>
               <li className="bg-white p-4 rounded-lg">
                 <Image
-                  src="/assets/Sponsers6.jpeg"
-                  alt="Facebook"
-                  height={50}
-                  width={50}
-                  className="aspect-3/2 object-contain"
-                />
-              </li>
-              <li className="bg-white p-4 rounded-lg">
-                <Image
                   src="/assets/sponser-11.png"
                   alt="Facebook"
                   height={100}
@@ -121,15 +112,6 @@ const Sponsers = () => {
                   className="aspect-3/2 object-contain"
                 />
               </li>{' '}
-              <li className="bg-white p-4 rounded-lg">
-                <Image
-                  src="/assets/Sponsers6.jpeg"
-                  alt="Facebook"
-                  height={50}
-                  width={50}
-                  className="aspect-3/2 object-contain"
-                />
-              </li>
             </ul>
           </div>
         </div>
