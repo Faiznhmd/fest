@@ -13,7 +13,7 @@ const Event = () => {
       <div className="container pt-2">
         <div className="flex flex-wrap items-center justify-between -mx-4">
           <div className="w-full  p-6 lg:w-6/12 ">
-            <h1 className="font-bold  my-4 text-4xl md:text-7xl  bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600  text-transparent bg-clip-text">
+            <h1 className="font-bold inline-block my-4 text-4xl md:text-7xl  bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600  text-transparent bg-clip-text">
               Event Overview
             </h1>
             <div className="flex items-center -mx-3 sm:-mx-4">
@@ -626,7 +626,7 @@ const Event = () => {
               <span className="block mb-4 text-lg font-semibold text-primary">
                 {eventData?.venue}
               </span>
-              <h2 className="mb-5 text-3xl font-bold  sm:text-[40px]/[48px]  bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600 inline-block text-transparent bg-clip-text">
+              <h2 className="mb-5 text-3xl font-bold sm:text-[40px]/[48px] bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600 inline-block text-transparent bg-clip-text">
                 {eventData?.title}
               </h2>
               <p className="mb-5  text-slate-300 text-xl">{eventData?.about}</p>
