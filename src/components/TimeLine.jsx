@@ -103,9 +103,9 @@ const TimeLine = () => {
             </p>
             <h3 class="text-lg font-semibold text-white">Evening</h3>
             <time class="btext-base font-normal text-gray-400">
-              Robo Scooer 3:30PM-5:30PM
+              Robo Soccer 3:30PM-5:30PM
             </time>
-            <p class="text-base font-normal text-gray-400">Robo Scooer</p>
+            <p class="text-base font-normal text-gray-400">Robo Soccer</p>
           </div>
         </li>
       </ol>
